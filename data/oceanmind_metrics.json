@@ -1,0 +1,64 @@
+{
+  "updatedAt": "2026-06-09T14:32:00-03:00",
+  "summary": {
+    "averageSeaTemperature": 28.4,
+    "averageThermalAnomaly": 1.8,
+    "monitoredRegions": 12,
+    "activeAlerts": 4,
+    "generalRisk": "Alto",
+    "processedRecords": 12450,
+    "lastPipelineRun": "09/06/2026 14:32"
+  },
+  "regions": [
+    { "name": "Atlântico Sul", "temperature": 29.1, "anomaly": 2.3, "wind": 42, "pressure": 1002, "risk": "Crítico", "status": "Alerta emitido" },
+    { "name": "Costa Nordeste", "temperature": 28.7, "anomaly": 1.7, "wind": 35, "pressure": 1008, "risk": "Alto", "status": "Monitoramento intensificado" },
+    { "name": "Pacífico Equatorial", "temperature": 30.2, "anomaly": 2.8, "wind": 48, "pressure": 998, "risk": "Crítico", "status": "Alerta emitido" },
+    { "name": "Índico Oeste", "temperature": 27.9, "anomaly": 1.1, "wind": 27, "pressure": 1012, "risk": "Moderado", "status": "Observação" },
+    { "name": "Costa Sudeste", "temperature": 26.8, "anomaly": 0.8, "wind": 19, "pressure": 1016, "risk": "Baixo", "status": "Estável" }
+  ],
+  "temperatureSeries": [
+    { "day": "D-6", "normal": 26.4, "current": 27.2 },
+    { "day": "D-5", "normal": 26.5, "current": 27.6 },
+    { "day": "D-4", "normal": 26.5, "current": 28.0 },
+    { "day": "D-3", "normal": 26.6, "current": 28.5 },
+    { "day": "D-2", "normal": 26.6, "current": 28.9 },
+    { "day": "D-1", "normal": 26.7, "current": 29.2 },
+    { "day": "Hoje", "normal": 26.7, "current": 29.4 }
+  ],
+  "riskDistribution": [
+    { "risk": "Baixo", "count": 3 },
+    { "risk": "Moderado", "count": 5 },
+    { "risk": "Alto", "count": 7 },
+    { "risk": "Crítico", "count": 4 }
+  ],
+  "aiPrediction": {
+    "region": "Atlântico Sul",
+    "seaTemperature": 29.4,
+    "thermalAnomaly": 2.1,
+    "windSpeed": 42,
+    "pressure": 1002,
+    "cloudCoverage": 68,
+    "risk": "Crítico",
+    "confidence": 91,
+    "model": "Gradient Boosting Classifier"
+  },
+  "shapRanking": [
+    { "feature": "Anomalia térmica", "importance": 0.34 },
+    { "feature": "Temperatura da superfície", "importance": 0.26 },
+    { "feature": "Velocidade do vento", "importance": 0.18 },
+    { "feature": "Pressão atmosférica", "importance": 0.13 },
+    { "feature": "Cobertura de nuvens", "importance": 0.09 }
+  ],
+  "computerVision": {
+    "imageName": "oceano_atlantico_sul_03.png",
+    "model": "CNN v2 treinada do zero",
+    "classification": "Anomalia térmica",
+    "confidence": 88.7
+  },
+  "rpaAlerts": [
+    { "level": "Crítico", "region": "Atlântico Sul", "action": "E-mail enviado para equipe ambiental" },
+    { "level": "Alto", "region": "Costa Nordeste", "action": "Planilha de monitoramento atualizada" },
+    { "level": "Crítico", "region": "Pacífico Equatorial", "action": "Ocorrência registrada" },
+    { "level": "Moderado", "region": "Índico Oeste", "action": "Registro mantido para observação" }
+  ]
+}
