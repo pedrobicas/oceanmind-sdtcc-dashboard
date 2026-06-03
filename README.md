@@ -4,6 +4,10 @@ Dashboard web demonstrativo para a Global Solution 2026 da FIAP, conectado ao te
 
 O projeto representa a camada de **Secure DevOps Tools & Cloud Computing (SDTCC)** do OceanMind, uma plataforma de inteligência oceânica que utiliza dados espaciais, climáticos e ambientais para monitorar aquecimento oceânico, detectar anomalias e apoiar decisões em regiões marítimas e costeiras.
 
+### Links
+
+Deploy: https://oceanmind-dashboard.azurewebsites.net/
+
 ### Integrantes
 
 | Nome | RM |
