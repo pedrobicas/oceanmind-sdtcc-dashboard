@@ -15,6 +15,7 @@ import {
   Satellite,
   ShieldCheck,
   ThermometerSun,
+  Users,
   Waves
 } from 'lucide-react';
 import {
@@ -82,6 +83,7 @@ function App() {
             <a href="#ia">IA</a>
             <a href="#arquitetura">Arquitetura</a>
             <a href="#devops">DevOps</a>
+            <a href="#equipe">Equipe</a>
           </div>
         </nav>
 
@@ -324,6 +326,8 @@ function App() {
           <div className="devops-item"><Activity /> Application Insights e Alert Rule</div>
         </div>
       </section>
+
+
       <section id="equipe" className="content-block">
         <SectionTitle
           icon={Users}
@@ -343,6 +347,7 @@ function App() {
           ))}
         </div>
       </section>
+
       <footer>
         <strong>OceanMind · FIAP Global Solution 2026</strong>
         <span>Engenharia de Software · 4º ano · Projeto demonstrativo para Indústria Espacial</span>
