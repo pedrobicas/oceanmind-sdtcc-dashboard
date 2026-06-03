@@ -316,7 +316,25 @@ function App() {
           <div className="devops-item"><Activity /> Application Insights e Alert Rule</div>
         </div>
       </section>
-
+      <section id="equipe" className="content-block">
+        <SectionTitle
+          icon={Users}
+          eyebrow="Equipe"
+          title="Integrantes do projeto"
+          description="Grupo responsável pelo desenvolvimento do OceanMind na Global Solution 2026."
+        />
+        <div className="devops-grid">
+          {teamMembers.map((member) => (
+            <div className="devops-item" key={member.rm}>
+              <Users size={20} />
+              <div>
+                <strong>{member.name}</strong>
+                <span>RM {member.rm}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
       <footer>
         <strong>OceanMind · FIAP Global Solution 2026</strong>
         <span>Engenharia de Software · 4º ano · Projeto demonstrativo para Indústria Espacial</span>
