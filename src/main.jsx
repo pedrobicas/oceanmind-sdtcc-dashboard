@@ -38,6 +38,14 @@ const riskClass = {
   Crítico: 'risk-critical'
 };
 
+const teamMembers = [
+  { name: 'Bryan Willian', rm: '551305' },
+  { name: 'Felipe Terra', rm: '99405' },
+  { name: 'Gabriel Doms', rm: '98630' },
+  { name: 'Lucas Vassão', rm: '98607' },
+  { name: 'Pedro Bicas', rm: '99534' }
+];
+
 function MetricCard({ icon: Icon, label, value, detail }) {
   return (
     <article className="metric-card">
