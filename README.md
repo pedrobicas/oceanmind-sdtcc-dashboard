@@ -8,6 +8,12 @@ O projeto representa a camada de **Secure DevOps Tools & Cloud Computing (SDTCC)
 
 Deploy: https://oceanmind-dashboard.azurewebsites.net/
 
+Projetos relacionados:
+
+- https://github.com/pedrobicas/oceanmind-acv-computer-vision
+
+- https://github.com/pedrobicas/oceanmind-gaie-ml
+
 ### Integrantes
 
 | Nome | RM |
